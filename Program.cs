@@ -22,7 +22,7 @@ string[] ChoiseElement(string[] array, int maxLength)
     return result;
 }
 Clear();
-string[] array = { "Text", "Home", "To", "Do", "5", "six", "seven" };
-Write($"{String.Join(" ",array)} ==>");
+string[] array = { "Text", "Home", "seven", "[ ]", ":')" };
+Write($"[ {String.Join(", ",array)} ] ==>");
 string[] array1 = ChoiseElement(array, 3);
-WriteLine(String.Join(" ",array1));
+WriteLine($" [ {String.Join(", ",array1)} ]");
